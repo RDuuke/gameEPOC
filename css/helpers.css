@@ -1,0 +1,101 @@
+/* helpers */
+.font-size-1-8-em
+{
+    font-size: 1.5em;
+}
+.font-weight-500
+{
+    font-weight: 500;
+}
+.text-center
+{
+    text-align: center;
+}
+.text-right
+{
+    text-align: right;
+}
+.text-white
+{
+    color: #fff;
+}
+.block-center
+{
+    margin: 0 auto;
+}
+
+.block-display
+{
+    display: block;
+}
+
+.box-shadow
+{
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+}
+
+.circle
+{
+    border-radius: 50%;
+}
+
+.btn-red
+{
+    background: red;
+    padding: 0 10px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.logo-causa
+{
+    position: relative;
+}
+
+.logo-causa:before
+{
+    content: "Causas";
+    font-size: 3em;
+    position: absolute;
+    color: #fff;
+    left: 89px;
+    top: -73px;
+}
+.over{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.none-display
+{
+    display: none;
+}
+.separator-10
+{
+    height: 10px;
+    width: 100%;
+}
+
+.separator-20
+{
+    height: 20px;
+    width: 100%;
+}
+
+.separator-30
+{
+    height: 30px;
+    width: 100%;
+}
+
+.separator-40
+{
+    height: 40px;
+    width: 100%;
+}
+.bg-dark-orange{
+    background-color: #CE3B28;
+    color:#fff;
+    padding: 10px 0;
+}

@@ -1,3 +1,5 @@
+@import 'helpers.css';
+@import 'fonts.css';
 *,
 *:before,
 *:after {
@@ -6,8 +8,8 @@
 }
 
 body {
-  margin      : 0;
-  font-family : sans-serif;
+  margin: 0;
+  font-family : 'Raleway', sans-serif;
 }
 
 img {
@@ -21,16 +23,31 @@ a {
 a:hover { text-decoration : underline }
 
 body{
-    background: rgba(54,206,177,1);
-background: -moz-linear-gradient(top, rgba(54,206,177,1) 0%, rgba(54,206,177,1) 66%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(54,206,177,1)), color-stop(66%, rgba(54,206,177,1)), color-stop(81%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(top, rgba(54,206,177,1) 0%, rgba(54,206,177,1) 66%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(top, rgba(54,206,177,1) 0%, rgba(54,206,177,1) 66%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(54,206,177,1) 0%, rgba(54,206,177,1) 66%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
-background: linear-gradient(to bottom, rgba(54,206,177,1) 0%, rgba(54,206,177,1) 66%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36ceb1', endColorstr='#ffffff', GradientType=0 );
-}
+    background-color: rgba(54,206,177,1);
+    background-image: url(../images/nn.png), url(../images/Franja.png), url(../images/Patron.png);
+    background-repeat: no-repeat, repeat-x, repeat-x;
+    background-position: -13px 50%, 0px 75%, bottom;
+    background-size:103% 15%;
 
+}
+.answers
+{
+    cursor: move;
+}
+.bg-red-and-box
+{
+    background: red;
+    border-radius: 50px;
+    padding: 20px;
+    height: 156px;
+    width: 280px;
+    margin: 0 auto;
+    color: #FFf;
+}
+.padding-text-box
+{
+    padding: 50px 20px;
+}
 .block-left > p, .block-right > p
 {
     font-size: 2em;
@@ -40,9 +57,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36ceb1', end
 {
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
+    padding: 4px;
     cursor: move;
 }
+.iframe-game-two
+{
+    padding: 11px 0px 1px 10px;
+    background: rgba(0, 255, 255, 0.21);
+}
+
 #response-left p, #response-right p
 {
     font-size: 1.6em;
@@ -51,66 +75,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36ceb1', end
     padding-top: 5px;
     padding-bottom: 5px;
 }
-#response-left, #response-right
+.box-answer
+{
+    margin-top: 10px;
+    background: white;
+    width: 100%;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#response-left, #response-right, 
 {
     margin-top: 20px;
     background: white;
     border-radius: 25px;
     width: 100%;
-    height: 300px;
+    height: 209px;
     padding: 10px;
 }
-/* helpers */
-.text-center
-{
-    text-align: center;
-}
 
-.block-center
+.normal
 {
-    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 28px 0px !important;
 }
-
-.block-display
-{
-    display: block;
-}
-
-.box-shadow
-{
-    -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
-}
-
-.circle
-{
-    border-radius: 50%;
-}
-
-.btn-red
-{
-    background: red;
-    padding: 0 10px;
-    border-radius: 25px;
-    color: #fff;
-}
-
-.logo-causa
-{
-    position: relative;
-}
-
-.logo-causa:before
-{
-    content: "Causas";
-    font-size: 3em;
-    position: absolute;
-    color: #fff;
-    left: 89px;
-    top: -73px;
-}
-.over{
-    transform: scale(1.1);
-    transition: all .5s;
+.normal p {
+    font-size: 1.2em !important;
 }
